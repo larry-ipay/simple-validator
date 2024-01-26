@@ -3,7 +3,7 @@
         'name' => 'deskola/simple-validator-two',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '8e1259629d017bbbbff5a2661b947fbd285d7b77',
+        'reference' => '513e7a6d638b16911d7f238b4748502b3914113a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'deskola/simple-validator-two' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '8e1259629d017bbbbff5a2661b947fbd285d7b77',
+            'reference' => '513e7a6d638b16911d7f238b4748502b3914113a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
