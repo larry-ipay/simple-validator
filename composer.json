@@ -15,9 +15,10 @@
         }
     ],
     "minimum-stability": "stable",
+    
     "require": {
         "giggsey/libphonenumber-for-php": "^8.12",
-        "deskola/simple-validator-two": "main"
+        "deskola/simple-validator-two": "dev-main"
         
     },
     "require-dev": {
