@@ -14,7 +14,7 @@
             "email": "mofostwo@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
 
     "require": {
         "giggsey/libphonenumber-for-php": "^8.12"
