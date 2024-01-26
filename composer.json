@@ -1,7 +1,7 @@
 {
     "name": "deskola/simple-validator-two",
     "description": "This is a simple validator library adapted from https://www.phptutorial.net/php-tutorial/",
-    "type": "library",
+    "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -14,7 +14,7 @@
             "email": "mofostwo@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
 
     "require": {
         "giggsey/libphonenumber-for-php": "^8.12"
