@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'deskola/simple-validator',
+        'name' => 'deskola/simple-validator-two',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '10490f664b60289e1cc4076fdd88a917e9ff1735',
+        'reference' => '8e1259629d017bbbbff5a2661b947fbd285d7b77',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'deskola/simple-validator' => array(
+        'deskola/simple-validator-two' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '10490f664b60289e1cc4076fdd88a917e9ff1735',
+            'reference' => '8e1259629d017bbbbff5a2661b947fbd285d7b77',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

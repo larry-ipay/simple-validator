@@ -16,9 +16,17 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "giggsey/libphonenumber-for-php": "^8.12"
+        "giggsey/libphonenumber-for-php": "^8.12",
+        "deskola/simple-validator-two": "dev-master"
+        
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/larry-ipay/simple-validator.git"
+        }
+    ]
 }
