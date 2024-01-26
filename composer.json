@@ -1,5 +1,5 @@
 {
-    "name": "deskola/simple-validator",
+    "name": "deskola/simple-validator-two",
     "description": "This is a simple validator library adapted from https://www.phptutorial.net/php-tutorial/",
     "type": "library",
     "license": "MIT",
@@ -10,8 +10,8 @@
     },
     "authors": [
         {
-            "name": "Deskola",
-            "email": "denisogunde@gmail.com"
+            "name": "Standish",
+            "email": "mofostwo@gmail.com"
         }
     ],
     "minimum-stability": "stable",
