@@ -10,7 +10,7 @@ class Sanitizer
     const FILTERS = [
         'string' => 'string', // Use 'string' as a placeholder for htmlspecialchars
         'string[]' => [
-            'filter' => FILTER_SANITIZE_STRING,
+            'filter' => 'string',
             'flags' => FILTER_REQUIRE_ARRAY,
         ],
         'email' => FILTER_SANITIZE_EMAIL,
@@ -45,7 +45,7 @@ class Sanitizer
      * @return array
      */
     // Inside the sanitize method of the Sanitizer class
-    public function sanitize(array $inputs, array $fields = [], int $default_filter = FILTER_SANITIZE_STRING, array $filters = self::FILTERS, bool $trim = true): array
+    public function sanitize(array $inputs, array $fields = [], array $filters = self::FILTERS, bool $trim = true): array
     {
         if ($fields) {
             $options = array_map(function ($field) use ($filters) {
