@@ -45,7 +45,6 @@ class Sanitizer
      * @return array
      */
     // Inside the sanitize method of the Sanitizer class
-// Inside the sanitize method of the Sanitizer class
     public function sanitize(array $inputs, array $fields = [], int $default_filter = FILTER_SANITIZE_STRING, array $filters = self::FILTERS, bool $trim = true): array
     {
         if ($fields) {
@@ -57,7 +56,7 @@ class Sanitizer
 
             // Special handling for 'string' filter to use htmlspecialchars
             foreach ($fields as $field) {
-                if ($filters[$field] === 'string') {
+                if (isset($data[$field])) {
                     if (is_array($data[$field])) {
                         // If it's an array, apply htmlspecialchars to each element
                         $data[$field] = array_map('htmlspecialchars', $data[$field], array_fill(0, count($data[$field]), ENT_QUOTES | ENT_HTML5));
@@ -69,12 +68,17 @@ class Sanitizer
             }
         } else {
             // Replace deprecated FILTER_SANITIZE_STRING with htmlspecialchars
-            $data = htmlspecialchars(implode('', $inputs), ENT_QUOTES | ENT_HTML5);
-            $data = [$data]; // Convert the string back to an array
+            if (isset($inputs[0])) {
+                $data = htmlspecialchars($inputs[0], ENT_QUOTES | ENT_HTML5);
+                $data = [$data]; // Convert the string back to an array
+            } else {
+                $data = [];
+            }
         }
 
         return $trim ? $this->array_trim($data) : $data;
     }
+
 
 
 
